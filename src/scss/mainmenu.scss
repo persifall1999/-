@@ -5,6 +5,13 @@
     margin: 20px;
     margin-left: 16px;
     display: flex;
+    @media (min-width: $screen-md) {
+      margin-left: 24px;
+    }
+    @media (min-width: $screen-lg) {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
   }
 }
 .menu {

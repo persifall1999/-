@@ -39,6 +39,9 @@
     padding-left: 16px;
     margin: 0;
     margin-right: auto;
+    @media (min-width: $screen-lg) {
+      padding-left: 24px;
+    }
   }
   &__title::before {
     content: '';

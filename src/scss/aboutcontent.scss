@@ -6,7 +6,7 @@
     cursor: pointer;
     display: flex;
     text-align: center;
-    gap: 5px;
+    gap: 2px;
     padding: 0;
     width: 132px;
     height: 24px;
@@ -28,6 +28,8 @@
     @media (min-width: $screen-md) {
       flex-direction: row;
       padding: 16px;
+      padding-right: 24px;
+      padding-left: 24px;
     }
   }
   &__image {
