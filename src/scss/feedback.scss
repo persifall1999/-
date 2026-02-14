@@ -1,0 +1,105 @@
+.feedback {
+  &__header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+    padding-top: 24px;
+    @media (min-width: $screen-md) {
+      position: absolute;
+    }
+  }
+  &__row {
+    margin-top: 32px;
+    padding: 0;
+  }
+  &__button {
+    @media (min-width: $screen-md) {
+      display: flex;
+      transform: translate(0);
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    padding-bottom: 8px;
+  }
+  &__block {
+    @media (min-width: $screen-md) {
+      width: 440px;
+      border-left: 1px solid $color-border;
+      box-shadow: 5px 0 80px $color-shadow;
+    }
+    position: fixed;
+    right: 0;
+    width: 320px;
+    z-index: 200;
+    background-color: $color-main;
+    box-shadow: none;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: inherit;
+  }
+  &--hide {
+    display: none;
+  }
+  &__input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid $color-brandsborder;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0px;
+    text-align: left;
+    opacity: 0.8;
+    margin: 10px 0;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin: 0;
+    color: #7e7e82;
+  }
+  &__link {
+    color: $color-button;
+    text-decoration: none;
+  }
+  &__textarea {
+    font-family: inherit;
+    opacity: 0.8;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid $color-brandsborder;
+    border-radius: 5px;
+    font-size: 16px;
+    height: 80px;
+    resize: none;
+  }
+  &__submit {
+    position: static;
+    margin-top: 16px;
+    margin-right: 16px;
+    margin-left: auto;
+  }
+  &--circle {
+    @media (min-width: $screen-md) {
+      position: absolute;
+      top: 8px;
+      right: 32px;
+    }
+  }
+}

@@ -1,0 +1,275 @@
+.fade {
+  &__third {
+    position: absolute;
+    width: 24px;
+    height: 200px;
+    background: linear-gradient(
+      to left,
+      $color-main 16.84%,
+      rgba(248, 248, 248, 0.0001) 100%
+    );
+    right: 0;
+    top: 32px;
+    z-index: 10;
+    @media (min-width: $screen-md) {
+      display: none;
+    }
+  }
+}
+
+.item {
+  &__button {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 32px;
+    letter-spacing: -0.15px;
+    text-align: right;
+    text-transform: uppercase;
+    border-radius: 20px;
+    width: 119px;
+    height: 32px;
+    background-color: $color-button;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+    padding: 0;
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    @media (min-width: $screen-md) {
+      position: static;
+      margin-left: auto;
+    }
+  }
+  &__coast {
+    margin: 0;
+    @media (min-width: $screen-md) {
+      margin: 0;
+      flex: 0 0 15%;
+    }
+  }
+  &__order {
+    color: $color-main;
+  }
+  &__text {
+    margin: 0;
+    @media (min-width: $screen-md) {
+      margin: 0;
+      flex: 0 0 45%;
+    }
+  }
+  &__time {
+    margin: 0;
+    @media (min-width: $screen-md) {
+      flex: 0 0 15%;
+      margin: 0;
+    }
+  }
+}
+.price {
+  &__block {
+    min-width: 320px;
+  }
+  &__work {
+    position: relative;
+  }
+}
+
+.view {
+  @media (min-width: $screen-md) {
+    display: flex;
+    padding: 0 16px;
+    margin-bottom: 16px;
+    align-items: center;
+  }
+  &__coast {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0px;
+    opacity: 0.6;
+    margin: 0;
+    margin-top: 16px;
+    @media (min-width: $screen-md) {
+      margin: 0;
+      flex: 0 0 15%;
+    }
+  }
+  &__coast--hidden {
+    @media (min-width: $screen-md) {
+      display: none;
+    }
+  }
+  &__text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0px;
+    opacity: 0.6;
+    margin: 0;
+    @media (min-width: $screen-md) {
+      margin: 0;
+      flex: 0 0 45%;
+    }
+  }
+  &__text--hidden {
+    @media (min-width: $screen-md) {
+      display: none;
+    }
+  }
+  &__time {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0px;
+    opacity: 0.6;
+    margin: 0;
+    margin-top: 16px;
+    @media (min-width: $screen-md) {
+      margin: 0;
+      flex: 0 0 15%;
+    }
+  }
+  &__time--hidden {
+    @media (min-width: $screen-md) {
+      display: none;
+    }
+  }
+}
+.work {
+  &__item {
+    flex-shrink: 0;
+    width: 260px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid $color-brandsborder;
+    border-radius: 5px;
+    background-color: $color-main;
+    margin-right: 0;
+    position: relative;
+    padding: 16px;
+    @media (min-width: $screen-md) {
+      border: none;
+      border-radius: 0;
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-right: 0 !important;
+      margin-bottom: 0;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 16px;
+        right: 16px;
+        height: 1px;
+        background-color: $color-brandsborder;
+      }
+      &:last-child::after {
+        display: none;
+      }
+    }
+    &--borderup {
+      border-radius: 5px 5px 0 0;
+    }
+
+    &--borderdown {
+      border-radius: 0 0 5px 5px;
+    }
+  }
+  &__list {
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 16px;
+    @media (min-width: $screen-md) {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      transform: none !important;
+      margin-left: 24px;
+      margin-top: 32px;
+      width: 100%;
+    }
+  }
+  &__view {
+    padding: 0;
+    display: none;
+    @media (min-width: $screen-md) {
+      margin-left: 16px;
+      display: flex;
+      flex-direction: row;
+      margin-right: 16px !important;
+    }
+  }
+}
+
+.addition__text {
+  margin: 0;
+  width: 288px;
+  margin-left: 16px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  @media (min-width: $screen-md) {
+    width: 421px;
+    margin-left: 24px;
+    padding-top: 24px;
+  }
+  @media (min-width: $screen-md) {
+    padding-top: 32px;
+  }
+}
+.proposal {
+  &__button {
+    position: relative;
+    margin-left: 16px;
+    margin-top: 16px;
+    padding: 0;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    background-color: $color-site;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    text-align: left;
+    width: 192px;
+    padding-bottom: 32px;
+    @media (min-width: $screen-md) {
+      margin-left: 24px;
+      width: 316px;
+    }
+  }
+  &__image {
+    position: absolute;
+    right: 73px;
+    bottom: 37px;
+    @media (min-width: $screen-md) {
+      position: static;
+    }
+  }
+}

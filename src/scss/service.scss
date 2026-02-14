@@ -1,0 +1,88 @@
+.fade {
+  &__second {
+    position: absolute;
+    width: 24px;
+    height: 166px;
+    background: linear-gradient(
+      to left,
+      $color-main 16.84%,
+      rgba(248, 248, 248, 0.0001) 100%
+    );
+    right: 0;
+    top: 7px;
+    z-index: 10;
+    @media (min-width: $screen-md) {
+      display: none;
+    }
+  }
+}
+
+.service {
+  &__block {
+    min-width: 320px;
+  }
+  &__tech {
+    position: relative;
+  }
+}
+
+.tech {
+  &__item {
+    flex-shrink: 0;
+    width: 224px;
+    height: 160px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid $color-brandsborder;
+    border-radius: 5px;
+    background-color: $color-main;
+    margin-right: 0;
+    position: relative;
+    @media (min-width: $screen-md) {
+      display: flex;
+      margin-right: 8px !important;
+    }
+    @media (min-width: $screen-lg) {
+      margin-right: 16px !important;
+    }
+    &--hidden1440 {
+      @media (min-width: $screen-lg) {
+        display: none !important;
+      }
+    }
+    &--hidden768 {
+      @media (min-width: $screen-md) {
+        display: none;
+      }
+      @media (min-width: $screen-lg) {
+        display: flex;
+      }
+    }
+  }
+  &__list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-left: 16px;
+    margin-top: 16px;
+    @media (min-width: $screen-md) {
+      display: flex;
+      flex-wrap: wrap;
+      transform: none !important;
+      gap: 16px;
+      margin-left: 24px;
+    }
+  }
+  &__text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    margin-left: 16px;
+    margin-bottom: auto;
+  }
+  &__more {
+    margin-bottom: 16px;
+    margin-top: auto;
+  }
+}

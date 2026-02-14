@@ -1,0 +1,159 @@
+.brands {
+  &__image {
+    margin-left: 16px;
+  }
+  &__item {
+    flex-shrink: 0;
+    width: 240px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid $color-brandsborder;
+    border-radius: 5px;
+    background-color: $color-main;
+    margin-right: 0;
+    position: relative;
+    @media (min-width: $screen-md) {
+      display: flex;
+      width: 224px;
+      margin-right: 8px !important;
+    }
+    @media (min-width: $screen-lg) {
+      width: 240px;
+      margin-right: 16px !important;
+    }
+    &--hidden1120 {
+      @media (min-width: $screen-lg) {
+        display: none !important;
+      }
+    }
+    &--hidden768 {
+      @media (min-width: $screen-md) {
+        display: none;
+      }
+      @media (min-width: $screen-lg) {
+        display: flex;
+      }
+    }
+  }
+  &__list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-left: 16px;
+    margin-top: 16px;
+    @media (min-width: $screen-md) {
+      display: flex;
+      flex-wrap: wrap;
+      transform: none !important;
+      gap: 16px;
+      margin-left: 24px;
+    }
+  }
+  &__more {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    border: 2px solid $color-button;
+    background-color: $color-main;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 0;
+    margin-right: 16px;
+  }
+  &__show {
+    margin-top: 16px;
+    background-color: $color-site;
+    font-family: inherit;
+    width: 138px;
+    height: 24px;
+    display: flex;
+    text-align: center;
+    margin-left: 16px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    border: none;
+    gap: 2px;
+    display: none;
+    @media (min-width: $screen-md) {
+      display: flex;
+    }
+  }
+}
+.fade {
+  position: absolute;
+  width: 24px;
+  height: 81px;
+  background: linear-gradient(
+    to left,
+    $color-main 16.84%,
+    rgba(248, 248, 248, 0.0001) 100%
+  );
+  right: 0;
+  top: 7px;
+  z-index: 10;
+  @media (min-width: $screen-md) {
+    display: none;
+  }
+}
+.header {
+  &__about {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    text-transform: uppercase;
+    opacity: 0.6;
+    padding: 24px;
+    margin: 0;
+  }
+}
+.repair {
+  &__block {
+    min-width: 320px;
+  }
+  &__brands {
+    position: relative;
+  }
+  &__header {
+    margin-top: 32px;
+    border-top: 1px solid $color-border;
+    background: linear-gradient(to right, $color-site, $color-main);
+  }
+}
+.swiper-container {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  @media (min-width: $screen-md) {
+    display: flex;
+    overflow-y: visible;
+    flex-wrap: wrap;
+  }
+}
+.swiper-pagination {
+  display: flex !important;
+  gap: 12px;
+  position: relative;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  @media (min-width: $screen-md) {
+    display: none !important;
+  }
+}
+.swiper-pagination-bullet {
+  background-color: $color-bullet !important;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+}
+.swiper-pagination-bullet-active {
+  background-color: $color-bulletactive !important;
+}

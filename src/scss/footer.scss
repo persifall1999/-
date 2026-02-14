@@ -1,0 +1,45 @@
+.footer {
+  &__center {
+    @media (min-width: $screen-md) {
+      align-self: flex-start;
+      margin-left: auto;
+    }
+  }
+  &__info {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    background-color: $color-site;
+    border-top: 1px solid $color-border;
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+    text-align: center;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0px;
+    opacity: 0.6;
+    min-width: 320px;
+
+    @media (min-width: $screen-md) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-self: center;
+    }
+  }
+  &__right {
+    @media (min-width: $screen-md) {
+      margin-left: auto;
+      text-align: end;
+      margin-right: 24px;
+    }
+  }
+  &__left {
+    @media (min-width: $screen-md) {
+      margin-left: 24px;
+      text-align: left;
+    }
+  }
+}
