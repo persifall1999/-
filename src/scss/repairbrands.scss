@@ -82,6 +82,10 @@
     border: none;
     gap: 2px;
     display: none;
+    transition: 1.5s ease-in-out 0.5s;
+    &:hover {
+      filter: blur(0.5px);
+    }
     @media (min-width: $screen-md) {
       display: flex;
     }

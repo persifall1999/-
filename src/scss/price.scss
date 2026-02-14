@@ -39,6 +39,10 @@
     position: absolute;
     bottom: 16px;
     right: 16px;
+    transition: 1.5s ease-in-out 0.5s;
+    &:hover {
+      filter: brightness(1.6);
+    }
     @media (min-width: $screen-md) {
       position: static;
       margin-left: auto;
@@ -260,9 +264,13 @@
     text-align: left;
     width: 192px;
     padding-bottom: 32px;
+    transition: 1.5s ease-in-out 0.5s;
     @media (min-width: $screen-md) {
       margin-left: 24px;
       width: 316px;
+    }
+    &:hover {
+      filter: blur(0.5px);
     }
   }
   &__image {

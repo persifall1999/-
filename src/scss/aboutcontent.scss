@@ -10,6 +10,10 @@
     padding: 0;
     width: 132px;
     height: 24px;
+    transition: 1.5s ease-in-out 0.5s;
+    &:hover {
+      filter: blur(0.5px);
+    }
     &--next {
       font-weight: 500;
       font-size: 16px;
