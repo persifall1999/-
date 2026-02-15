@@ -16,6 +16,12 @@ body {
   }
 }
 
+.blure {
+  @media (min-width: 1440px) {
+    margin-left: 320px;
+  }
+}
+
 .blure--active {
   filter: blur(5px);
 }

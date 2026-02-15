@@ -11,9 +11,12 @@
   }
 }
 .fixed {
+  @media (min-width: $screen-lg) {
+    position: fixed;
+    height: 100%;
+  }
   &__block {
     @media (min-width: $screen-lg) {
-      position: static;
       box-shadow: none;
     }
     width: 320px;

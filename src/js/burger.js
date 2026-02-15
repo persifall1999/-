@@ -7,12 +7,14 @@ headerButtonClose.addEventListener('click', function (event) {
   event.stopPropagation()
   fixed.classList.add('fixed--hide')
   blure.classList.remove('blure--active')
+  document.body.style.overflow = ''
 })
 
 headerButtonBurger.addEventListener('click', function (event) {
   event.stopPropagation()
   fixed.classList.remove('fixed--hide')
   blure.classList.add('blure--active')
+  document.body.style.overflow = 'hidden'
 })
 
 blure.addEventListener('click', function () {
@@ -20,6 +22,7 @@ blure.addEventListener('click', function () {
     fixed.classList.add('fixed--hide')
     blure.classList.remove('blure--active')
     fixed.classList.remove('blure--active')
+    document.body.style.overflow = ''
   }
 })
 
@@ -28,6 +31,7 @@ let checkWindowSize = function () {
     fixed.classList.remove('fixed--hide')
     blure.classList.remove('blure--active')
     fixed.classList.remove('blure--active')
+    document.body.style.overflow = ''
   }
 }
 checkWindowSize()
